@@ -5,21 +5,39 @@ import { ArrowUpRight } from 'lucide-react';
 const projects = [
   {
     id: '01',
-    title: 'Medical Store System',
-    description: 'Logic-driven management built with C and Web Tech.',
+    title: 'Simple Calculator (Web)',
+    description: 'Built using HTML, CSS, and JS.',
     link: 'https://github.com/DurgaCSE11/MEDICAL-STORE-MANAGEMENT-SYSTEM.git'
   },
   {
     id: '02',
-    title: 'Scientific Calculator',
-    description: 'Advanced mathematical processing using C.',
-    link: 'https://github.com/DurgaCSE11/C-CODE-on-SCIENTIFIC-CALCULATOR.git'
+    title: 'Medical Store Management (Web)',
+    description: 'Management system using HTML, CSS, and JS.',
+    link: 'https://github.com/DurgaCSE11/MEDICAL-STORE-MANAGEMENT-SYSTEM.git'
   },
   {
     id: '03',
+    title: 'Medical Store Management (C)',
+    description: 'Logic-driven management built with C Language.',
+    link: 'https://github.com/DurgaCSE11/C-CODE-on-MEDICAL-STORE-MANAGEMENT-SYSTEM.git'
+  },
+  {
+    id: '04',
     title: 'CGPA Calculator',
     description: 'Performance tracking system built with C++.',
     link: 'https://github.com/DurgaCSE11/CGPA-CALCULATOR.git'
+  },
+  {
+    id: '05',
+    title: 'Simple Calculator (C)',
+    description: 'Basic calculator built using C.',
+    link: 'https://github.com/DurgaCSE11/C-CODE-on-SIMPLE-CALCULATOR.git'
+  },
+  {
+    id: '06',
+    title: 'Scientific Calculator',
+    description: 'Advanced mathematical processing using C.',
+    link: 'https://github.com/DurgaCSE11/C-CODE-on-SCIENTIFIC-CALCULATOR.git'
   }
 ];
 
@@ -28,7 +46,7 @@ const Projects = () => {
     <section id="projects">
       <div className="section-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', borderBottom: '1px solid var(--card-border)', paddingBottom: '20px' }}>
         <h2 className="section-title">Selected Works <span style={{ color: 'var(--accent)' }}>/</span></h2>
-        <span style={{ color: 'var(--text-dim)', fontSize: '1.2rem', marginBottom: '10px' }}>(03)</span>
+        <span style={{ color: 'var(--text-dim)', fontSize: '1.2rem', marginBottom: '10px' }}>(06)</span>
       </div>
 
       <div className="grid-3">
@@ -51,8 +69,8 @@ const Projects = () => {
                 <ArrowUpRight size={20} color="var(--accent)" />
               </div>
             </div>
-            <h3 style={{ fontSize: '1.5rem', marginBottom: '15px' }}>{project.title}</h3>
-            <p style={{ color: 'var(--text-dim)', fontSize: '0.95rem' }}>{project.description}</p>
+            <h3 style={{ fontSize: '1.2rem', marginBottom: '15px' }}>{project.title}</h3>
+            <p style={{ color: 'var(--text-dim)', fontSize: '0.9rem' }}>{project.description}</p>
           </motion.a>
         ))}
       </div>

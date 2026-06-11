@@ -3,14 +3,25 @@ import { motion } from 'framer-motion';
 
 const academics = [
   {
-    year: '2025-2029',
+    year: 'First Year',
     degree: 'B.Tech CSE - VSSUT Burla',
-    grade: 'Current Grade: 9.75 CGPA',
+    grade: 'Grade: 9.75 CGPA (1st Semester)',
   },
   {
-    year: '10+2',
+    year: '10+2 (Science)',
     degree: 'PM SHRI KV Rayagada',
     grade: 'Grade: 95.6%',
+  },
+  {
+    year: 'Matriculation',
+    degree: 'Chinmaya Vidylaya, Therubali',
+    grade: 'Grade: 96.2%',
+  }
+];
+
+const certificates = [
+  {
+    title: 'HTML and CSS',
   }
 ];
 
@@ -18,10 +29,10 @@ const Academics = () => {
   return (
     <section id="academics">
       <div className="section-header" style={{ borderBottom: '1px solid var(--card-border)', paddingBottom: '20px' }}>
-        <h2 className="section-title">Academics <span style={{ color: 'var(--accent)' }}>/</span></h2>
+        <h2 className="section-title">Education & Certificates <span style={{ color: 'var(--accent)' }}>/</span></h2>
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginBottom: '40px' }}>
         {academics.map((item, index) => (
           <motion.div 
             key={index}
@@ -42,6 +53,27 @@ const Academics = () => {
           </motion.div>
         ))}
       </div>
+
+      {certificates.length > 0 && (
+        <>
+          <h3 style={{ fontSize: '1.5rem', marginBottom: '20px', color: 'var(--text-main)' }}>Certificates</h3>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
+            {certificates.map((cert, index) => (
+              <motion.div
+                key={index}
+                className="glass-card"
+                style={{ padding: '20px 30px' }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+              >
+                <h4 style={{ fontSize: '1.1rem', margin: 0 }}>{cert.title}</h4>
+              </motion.div>
+            ))}
+          </div>
+        </>
+      )}
     </section>
   );
 };
