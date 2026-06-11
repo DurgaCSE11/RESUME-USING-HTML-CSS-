@@ -31,6 +31,16 @@
             "name": "English",
             "id": "en",
             "flagUrl": "images/flags/en-us.png"
+        },
+        {
+            "name": "Hindi",
+            "id": "hi",
+            "flagUrl": "images/flags/hi.png"
+        },
+        {
+            "name": "Odia",
+            "id": "or",
+            "flagUrl": "images/flags/hi.png"
         }
     ],
 

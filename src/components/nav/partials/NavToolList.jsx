@@ -41,7 +41,7 @@ function NavToolList({ expanded }) {
         `nav-tools-shrink`
 
     const widgets = [
-        "google_translate",
+        ...(language.supportsMultipleLanguages ? ["language"] : []),
         ...(theme.supportsMultipleThemes ? [NavToolSettings.Options.THEME] : []),
         ...(feedbacks.animatedCursorEnabled ? [NavToolSettings.Options.CURSOR] : []),
         ...(profile.resumePdfUrl ? [NavToolSettings.Options.DOWNLOAD_RESUME] : []),
@@ -57,10 +57,11 @@ function NavToolList({ expanded }) {
 
     return (
         <div className={`nav-tools ${shrinkClass}`}>
+            <div id="google_translate_element" style={{ display: 'none' }}></div>
             {visibleWidgets.map((item, key) => (
-                <div className={`nav-tools-item ${item === 'google_translate' ? 'nav-tools-item-translate' : ''}`}
-                     key={key} style={item === 'google_translate' ? { display: 'flex', alignItems: 'center', justifyContent: 'center', width: 'auto', padding: '0 10px', overflow: 'hidden' } : {}}>
-                    {item === "google_translate" && (<div id="google_translate_element"></div>)}
+                <div className={`nav-tools-item`}
+                     key={key}>
+                    {item === "language" && (<NavToolLanguagePicker/>)}
                     {item === NavToolSettings.Options.THEME && (<NavToolThemePicker/>)}
                     {item === NavToolSettings.Options.CURSOR && (<NavToolCursorToggle/>)}
                     {item === NavToolSettings.Options.DOWNLOAD_RESUME && (<NavToolResumeDownloader/>)}

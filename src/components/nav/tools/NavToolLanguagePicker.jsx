@@ -23,6 +23,9 @@ function NavToolLanguagePicker() {
         const targetLanguage = availableLanguages.find(lang => lang.id === optionId)
         if(targetLanguage) {
             language.setSelectedLanguage(targetLanguage)
+            // Hook Google Translate!
+            document.cookie = `googtrans=/en/${optionId}; path=/`;
+            window.location.reload();
         }
     }
 
