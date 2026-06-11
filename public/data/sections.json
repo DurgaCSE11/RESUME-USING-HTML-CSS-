@@ -19,6 +19,18 @@
             "faIcon": "fa-solid fa-briefcase"
         },
         {
+            "id": "skills",
+            "categoryId": "background",
+            "jsonPath": "/data/sections/skills.json",
+            "faIcon": "fa-solid fa-code"
+        },
+        {
+            "id": "resume",
+            "categoryId": "more",
+            "jsonPath": "/data/sections/resume.json",
+            "faIcon": "fa-solid fa-file-pdf"
+        },
+        {
             "id": "portfolio",
             "categoryId": "showcase",
             "jsonPath": "/data/sections/portfolio.json",

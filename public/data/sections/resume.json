@@ -1,0 +1,24 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Resume",
+                "title_short_nav": "Resume",
+                "title_long_prefix": "Download my",
+                "title_long": "{{Resume}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleText",
+            "locales": {
+                "en": {
+                    "text": "<div style='text-align: center; margin-top: 30px;'><h3 class='text-5'>Looking for my complete CV?</h3><p class='text-3 mt-3'>You can download my full resume by clicking the button below.</p><a href='resume.pdf' download class='btn btn-primary mt-4 py-3 px-5'><i class='fa-solid fa-download me-2'></i> Download Resume</a></div>"
+                }
+            }
+        }
+    ]
+}

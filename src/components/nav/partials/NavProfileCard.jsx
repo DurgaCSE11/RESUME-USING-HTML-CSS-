@@ -80,7 +80,7 @@ function NavProfileCard({ profile, expanded }) {
 
                 {roles?.length > 0 && (
                     <div className={`nav-profile-card-role`}
-                         dangerouslySetInnerHTML={{__html: roles.join(' | ')}}/>
+                         dangerouslySetInnerHTML={{__html: roles.join('<br/>')}}/>
                 )}
             </div>
         </Card>
