@@ -1,24 +1,40 @@
 import React from 'react';
-import Hero from './components/Hero';
-import Projects from './components/Projects';
-import Academics from './components/Academics';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+
+import Sidebar from './components/Sidebar';
+import About from './components/About';
+import Resume from './components/Resume';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+
+// Wrapper to provide useLocation to AnimatePresence
+const AnimatedRoutes = () => {
+  const location = useLocation();
+  
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<About />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </AnimatePresence>
+  );
+};
 
 function App() {
   return (
-    <>
-      <div className="bg-gradients">
-        <div className="gradient-blob blob-1"></div>
-        <div className="gradient-blob blob-2"></div>
+    <Router>
+      <div className="bg-gradients"></div>
+      <div className="app-container">
+        <Sidebar />
+        <main className="main-content">
+          <AnimatedRoutes />
+        </main>
       </div>
-      
-      <div className="container">
-        <Hero />
-        <Projects />
-        <Academics />
-        <Footer />
-      </div>
-    </>
+    </Router>
   );
 }
 
