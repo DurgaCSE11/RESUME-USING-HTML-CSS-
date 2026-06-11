@@ -14,11 +14,18 @@
         {
             "id": 1,
             "component": "ArticleText",
-            "locales": {
-                "en": {
-                    "text": "<div style='text-align: center; margin-top: 50px;'><h3 class='text-5' style='opacity: 0.7;'><i class='fa-solid fa-hourglass-half me-2'></i> Coming Soon...</h3><p class='text-3 mt-3' style='opacity: 0.5;'>I am currently curating my list of awards and certifications. Please check back later!</p></div>"
+            "locales": {},
+            "settings": {},
+            "items": [
+                {
+                    "id": 1,
+                    "locales": {
+                        "en": {
+                            "text": "<div style='text-align: center; margin-top: 30px;'><h3 class='text-5 mb-3'>Coming Soon...</h3><p class='text-3 mt-3'>This page will be updated soon.</p></div>"
+                        }
+                    }
                 }
-            }
+            ]
         }
     ]
 }
