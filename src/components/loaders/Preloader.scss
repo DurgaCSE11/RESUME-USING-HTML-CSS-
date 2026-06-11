@@ -14,6 +14,7 @@ div.preloader-window {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    background: radial-gradient(circle at center, rgba(0,0,0,0.8) 0%, $loader-background 100%);
 }
 
 div.preloader-window-hidden {
@@ -51,4 +52,29 @@ div.preloader-window-info-title {
 div.preloader-window-info-developer {
     opacity: 0.5;
     text-align: center;
+}
+
+div.preloader-sexy-icon {
+    font-size: 4.5rem;
+    color: var(--bs-primary);
+    filter: drop-shadow(0 0 10px var(--bs-primary));
+    animation: pulseGlow 1.5s infinite alternate ease-in-out;
+    transition: opacity 0.5s ease;
+    margin-bottom: 20px;
+}
+
+div.preloader-sexy-icon.hidden {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+@keyframes pulseGlow {
+    0% {
+        transform: scale(0.95);
+        filter: drop-shadow(0 0 5px var(--bs-primary));
+    }
+    100% {
+        transform: scale(1.05);
+        filter: drop-shadow(0 0 25px var(--bs-primary));
+    }
 }

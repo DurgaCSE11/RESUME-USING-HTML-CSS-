@@ -13,23 +13,18 @@
     "articles": [
         {
             "id": 1,
-            "component": "ArticleSkills",
+            "component": "ArticleCards",
             "locales": {},
-            "settings": {
-                "maxItemsPerRow": 2,
-                "maxRowsCollapseThreshold": 0,
-                "roundIcons": false
-            },
+            "settings": {},
             "items": [
                 {
                     "id": 1,
                     "img": "",
                     "faIcon": "fa-solid fa-code",
-                    "percentage": 85,
                     "locales": {
                         "en": {
                             "title": "C",
-                            "level": "Proficient"
+                            "text": "Proficient"
                         }
                     }
                 },
@@ -37,11 +32,10 @@
                     "id": 2,
                     "img": "",
                     "faIcon": "fa-solid fa-file-code",
-                    "percentage": 80,
                     "locales": {
                         "en": {
                             "title": "C++",
-                            "level": "Proficient"
+                            "text": "Proficient"
                         }
                     }
                 },
@@ -49,11 +43,10 @@
                     "id": 3,
                     "img": "",
                     "faIcon": "fa-brands fa-python",
-                    "percentage": 75,
                     "locales": {
                         "en": {
                             "title": "Python",
-                            "level": "Intermediate"
+                            "text": "Intermediate"
                         }
                     }
                 },
@@ -61,11 +54,10 @@
                     "id": 4,
                     "img": "",
                     "faIcon": "fa-brands fa-html5",
-                    "percentage": 95,
                     "locales": {
                         "en": {
                             "title": "HTML",
-                            "level": "Expert"
+                            "text": "Expert"
                         }
                     }
                 },
@@ -73,11 +65,10 @@
                     "id": 5,
                     "img": "",
                     "faIcon": "fa-brands fa-css3-alt",
-                    "percentage": 90,
                     "locales": {
                         "en": {
                             "title": "CSS",
-                            "level": "Expert"
+                            "text": "Expert"
                         }
                     }
                 },
@@ -85,11 +76,10 @@
                     "id": 6,
                     "img": "",
                     "faIcon": "fa-brands fa-js",
-                    "percentage": 85,
                     "locales": {
                         "en": {
                             "title": "JavaScript",
-                            "level": "Proficient"
+                            "text": "Proficient"
                         }
                     }
                 },
@@ -97,11 +87,10 @@
                     "id": 7,
                     "img": "",
                     "faIcon": "fa-brands fa-react",
-                    "percentage": 40,
                     "locales": {
                         "en": {
                             "title": "React",
-                            "level": "Learning"
+                            "text": "Learning"
                         }
                     }
                 }

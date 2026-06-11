@@ -1,6 +1,6 @@
 import "./Preloader.scss"
 import React, {useEffect, useState} from 'react'
-import PacMan from "/src/components/widgets/PacMan.jsx"
+
 import Logo from "/src/components/widgets/Logo.jsx"
 import {useScheduler} from "/src/hooks/scheduler.js"
 import {useUtils} from "/src/hooks/utils.js"
@@ -183,8 +183,9 @@ function PreloaderWindow({ title, subtitle, logoOffset, setDidLoadAllImages, sho
     return (
         <div className={`preloader-window ${hiddenClass}`}>
             <div className={`preloader-window-content`}>
-                <PacMan variant={PacMan.ColorVariants.LOADER}
-                        hidden={isPacManHidden}/>
+                <div className={`preloader-sexy-icon ${isPacManHidden ? 'hidden' : ''}`}>
+                    <i className="fa-solid fa-code"></i>
+                </div>
 
                 <PreloaderWindowInfo title={title}
                                      subtitle={subtitle}
