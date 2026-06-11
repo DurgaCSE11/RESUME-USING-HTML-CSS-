@@ -38,6 +38,12 @@
                     "label": "@DurgaCSE11",
                     "link": {"href": "https://github.com/DurgaCSE11", "tooltipString": "see_on_github"},
                     "faIcon": "fa-brands fa-github"
+                },
+                {
+                    "id": 4,
+                    "label": "LinkedIn",
+                    "link": {"href": "https://www.linkedin.com/in/durga-prasad-mahapatra", "tooltipString": "LinkedIn"},
+                    "faIcon": "fa-brands fa-linkedin"
                 }
             ]
         },
@@ -55,12 +61,12 @@
             "items": [
                 {
                     "id": 1,
-                    "img": "profile.jpeg",
+                    "img": "",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
                         "en": {
-                            "text": "<p>Currently pursuing my B.Tech in CSE at {{VSSUT, Burla}}.</p><p>I am actively building strong foundations in programming and web development. Focused on creative problem-solving and logical thinking, with expertise ranging from C/C++ to modern Web Development (HTML, CSS, JS, React).</p><p>I look forward to collaborating [[with you!]]</p>"
+                            "text": "<div style=\"font-size: 1.25rem; line-height: 1.8rem;\"><p>Currently pursuing my B.Tech in CSE at {{VSSUT, Burla}}.</p><p>I am actively building strong foundations in programming and web development. Focused on creative problem-solving and logical thinking, with expertise ranging from C/C++ to modern Web Development (HTML, CSS, JS, React).</p><p>Beyond coding, I'm highly passionate about exploring cutting-edge AI technologies, participating in hackathons, and continuously learning new tools to build scalable, impactful software solutions.</p><p>I look forward to collaborating [[with you!]]</p></div>"
                         }
                     }
                 }
