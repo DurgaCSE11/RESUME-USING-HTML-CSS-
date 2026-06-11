@@ -61,7 +61,7 @@
             "items": [
                 {
                     "id": 1,
-                    "img": "",
+                    "img": "images/pictures/profile-picture.jpg",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
