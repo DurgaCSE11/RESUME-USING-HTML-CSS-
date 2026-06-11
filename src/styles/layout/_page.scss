@@ -17,6 +17,10 @@ body {
 
 body.body-theme {
     background-color: var(--theme-background)!important;
+    background-image: url("/images/pictures/floral-bg.png")!important;
+    background-size: cover!important;
+    background-position: center!important;
+    background-attachment: fixed!important;
 }
 
 body.body-android {

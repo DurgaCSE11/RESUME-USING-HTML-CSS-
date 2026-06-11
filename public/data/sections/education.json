@@ -26,7 +26,7 @@
                     "faIcon": "pi pi-book",
                     "faIconColors": {"bg": "", "fill": ""},
                     "dateStart": {"year": 2025, "month": 8},
-                    "dateEnd": {"year": 2029, "month": 8},
+                    "dateEnd": {"year": 2029, "month": 7},
                     "locales": {
                         "en": {
                             "title": "{{Bachelor of Technology}} in CSE",
@@ -44,8 +44,8 @@
                     "img": "",
                     "faIcon": "pi pi-building",
                     "faIconColors": {"bg": "", "fill": ""},
-                    "dateStart": {"year": 2023, "month": 1},
-                    "dateEnd": {"year": 2025, "month": 1},
+                    "dateStart": {"year": 2022, "month": 4},
+                    "dateEnd": {"year": 2024, "month": 4},
                     "locales": {
                         "en": {
                             "title": "Intermediate (+2, Science PCMB)",
@@ -63,8 +63,7 @@
                     "img": "",
                     "faIcon": "pi pi-bookmark",
                     "faIconColors": {"bg": "", "fill": ""},
-                    "dateStart": {"year": 2013, "month": 1},
-                    "dateEnd": {"year": 2023, "month": 1},
+                    "dateEnd": {"year": 2022, "month": 3},
                     "locales": {
                         "en": {
                             "title": "{{Matriculation}}",
