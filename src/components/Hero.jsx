@@ -1,97 +1,100 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, ChevronRight, Code, Database, Globe, Terminal, FileCode } from 'lucide-react';
+import { Github, Linkedin, Mail, MapPin, Download, ChevronRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="hero" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-      <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '40px', flexWrap: 'wrap' }}>
+    <section id="about" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', paddingTop: '80px' }}>
+      <div className="grid-2" style={{ alignItems: 'center', width: '100%' }}>
+        
+        {/* Left Column: Image Area */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          style={{ flexShrink: 0 }}
+          style={{ display: 'flex', justifyContent: 'center' }}
         >
           <div style={{
-            width: '200px',
-            height: '200px',
-            borderRadius: '50%',
+            position: 'relative',
+            width: '100%',
+            maxWidth: '400px',
+            aspectRatio: '1/1',
+            borderRadius: '12px',
             overflow: 'hidden',
-            border: '4px solid var(--card-border)',
-            boxShadow: '0 0 30px var(--accent-glow)',
-            background: 'var(--card-bg)'
+            boxShadow: '0 20px 40px var(--shadow-color)',
+            border: '1px solid var(--card-border)'
           }}>
-            <img src="/profile.jpeg" alt="Durga Prasad Mahapatra" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img 
+              src="/profile.jpeg" 
+              alt="Durga Prasad Mahapatra" 
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+            />
+            {/* Cyan overlay tint on hover (optional) */}
+            <div style={{
+              position: 'absolute',
+              top: 0, left: 0, right: 0, bottom: 0,
+              background: 'linear-gradient(to top, rgba(0,229,255,0.2), transparent)',
+              pointerEvents: 'none'
+            }}></div>
           </div>
         </motion.div>
 
+        {/* Right Column: Text & Info */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          style={{ flex: 1, minWidth: '300px' }}
         >
-          <span className="label-text">WHO I AM</span>
+          <h4 style={{ color: 'var(--accent)', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '10px' }}>
+            Computer Science Undergraduate
+          </h4>
           
-          <h1 className="giant-text" style={{ fontSize: 'clamp(2.5rem, 8vw, 5rem)', margin: '15px 0' }}>
-            DURGA PRASAD <br />
-            <span className="dim">MAHAPATRA</span>
+          <h1 className="giant-text">
+            Durga Prasad <br />
+            <span className="dim">Mahapatra</span>
           </h1>
 
-          <p style={{ maxWidth: '800px', fontSize: '1.1rem', color: 'var(--text-dim)', marginBottom: '30px', lineHeight: '1.8' }}>
-            Currently pursuing a Bachelor of Technology in Computer Science and Engineering at Veer Surendra Sai University of Technology (VSSUT), Burla. 
-            I am actively building strong foundations in programming and web development. 
-            Currently exploring JavaScript, HTML, and CSS, with a focus on creative problem-solving, logical thinking, and curiosity-driven learning. 
-            I am also exploring C++ in depth beyond the foundational knowledge gained during my matriculation along with basics of MySQL. 
-            Motivated to continuously expand technical expertise, adapt to modern technologies, and contribute to innovative and impactful projects in the field of computer science.
+          <p style={{ fontSize: '1.05rem', color: 'var(--text-dim)', marginTop: '20px', marginBottom: '30px', lineHeight: '1.8' }}>
+            Currently pursuing my B.Tech in CSE at VSSUT, Burla. I am actively building strong foundations in programming and web development. Focused on creative problem-solving and logical thinking, with expertise ranging from C/C++ to modern Web Development (HTML, CSS, JS, React) and basics of MySQL & Python.
           </p>
 
-          <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+          <ul className="info-list">
+            <li className="info-item">
+              <span className="info-label">Email</span>
+              <span className="info-value">durgaprasadmahapatra21@gmail.com</span>
+            </li>
+            <li className="info-item">
+              <span className="info-label">Education</span>
+              <span className="info-value">VSSUT, Burla</span>
+            </li>
+            <li className="info-item">
+              <span className="info-label">Location</span>
+              <span className="info-value">Odisha, India</span>
+            </li>
+            <li className="info-item">
+              <span className="info-label">Member</span>
+              <span className="info-value">IEEE VSSUT Student Branch</span>
+            </li>
+          </ul>
+
+          <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', marginTop: '40px' }}>
             <a href="#projects" className="btn-primary">
-              View Projects <ChevronRight size={18} />
+              View Portfolio <ChevronRight size={18} />
             </a>
+            
             <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
-              <a href="https://github.com/DurgaCSE11" target="_blank" rel="noreferrer" style={{ color: 'var(--text-main)' }}>
-                <Github size={24} />
+              <a href="https://github.com/DurgaCSE11" target="_blank" rel="noreferrer" style={{ background: 'var(--card-bg)', padding: '12px', borderRadius: '6px', border: '1px solid var(--card-border)' }}>
+                <Github size={20} color="var(--text-main)" />
               </a>
-              <a href="https://www.linkedin.com/in/durga-prasad-mahapatra-63393437b/" target="_blank" rel="noreferrer" style={{ color: 'var(--text-main)' }}>
-                <Linkedin size={24} />
-              </a>
-              <a href="mailto:durgaprasadmahapatra21@gmail.com" style={{ color: 'var(--text-main)' }}>
-                <Mail size={24} />
+              <a href="https://www.linkedin.com/in/durga-prasad-mahapatra-63393437b/" target="_blank" rel="noreferrer" style={{ background: 'var(--card-bg)', padding: '12px', borderRadius: '6px', border: '1px solid var(--card-border)' }}>
+                <Linkedin size={20} color="var(--text-main)" />
               </a>
             </div>
           </div>
         </motion.div>
       </div>
-
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.8, duration: 1 }}
-        style={{ marginTop: '60px', borderTop: '1px solid var(--card-border)', paddingTop: '40px', display: 'flex', gap: '30px', flexDirection: 'column' }}
-      >
-        <p style={{ color: 'var(--text-main)', fontSize: '1rem', fontWeight: 'bold' }}>
-          Computer Science Undergraduate @ VSSUT | Member- CS Society IEEE VSSUT Student Branch
-        </p>
-        <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-          <span style={{ padding: '6px 14px', border: '1px solid var(--card-border)', borderRadius: '100px', fontSize: '0.85rem', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <Terminal size={14} /> C Programming
-          </span>
-          <span style={{ padding: '6px 14px', border: '1px solid var(--card-border)', borderRadius: '100px', fontSize: '0.85rem', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <Code size={14} /> Basic C++
-          </span>
-          <span style={{ padding: '6px 14px', border: '1px solid var(--card-border)', borderRadius: '100px', fontSize: '0.85rem', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <Globe size={14} /> HTML & CSS
-          </span>
-          <span style={{ padding: '6px 14px', border: '1px solid var(--card-border)', borderRadius: '100px', fontSize: '0.85rem', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <Database size={14} /> Basic MySQL
-          </span>
-          <span style={{ padding: '6px 14px', border: '1px solid var(--card-border)', borderRadius: '100px', fontSize: '0.85rem', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <FileCode size={14} /> Basic Python
-          </span>
-        </div>
-      </motion.div>
     </section>
   );
 };
