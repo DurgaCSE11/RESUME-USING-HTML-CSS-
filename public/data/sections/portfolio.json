@@ -1,0 +1,165 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Portfolio",
+                "title_short_nav": "Portfolio",
+                "title_long_prefix": "Take a look at",
+                "title_long": "My {{Portfolio}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticlePortfolio",
+            "locales": {
+                "en": {
+                    "category_all": "All",
+                    "category_web": "Web",
+                    "category_cli": "CLI Tools"
+                }
+            },
+            "settings": {
+                "categorize_by": ["category_web", "category_cli"],
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "categoryId": "category_web",
+                    "img": "",
+                    "faIcon": "pi pi-calculator",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/DurgaCSE11/MEDICAL-STORE-MANAGEMENT-SYSTEM.git", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Simple Calculator (Web)",
+                            "text": "Built using HTML, CSS, and JS.",
+                            "tags": ["HTML", "CSS", "JS"]
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "categoryId": "category_web",
+                    "img": "",
+                    "faIcon": "pi pi-heart",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/DurgaCSE11/MEDICAL-STORE-MANAGEMENT-SYSTEM.git", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Medical Store Management (Web)",
+                            "text": "Management system using HTML, CSS, and JS.",
+                            "tags": ["HTML", "CSS", "JS"]
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "categoryId": "category_cli",
+                    "img": "",
+                    "faIcon": "pi pi-code",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/DurgaCSE11/C-CODE-on-MEDICAL-STORE-MANAGEMENT-SYSTEM.git", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Medical Store Management (C)",
+                            "text": "Logic-driven management built with C Language.",
+                            "tags": ["C"]
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "categoryId": "category_cli",
+                    "img": "",
+                    "faIcon": "pi pi-chart-bar",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/DurgaCSE11/CGPA-CALCULATOR.git", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "CGPA Calculator",
+                            "text": "Performance tracking system built with C++.",
+                            "tags": ["C++"]
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "categoryId": "category_cli",
+                    "img": "",
+                    "faIcon": "pi pi-calculator",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/DurgaCSE11/C-CODE-on-SIMPLE-CALCULATOR.git", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Simple Calculator (C)",
+                            "text": "Basic calculator built using C.",
+                            "tags": ["C"]
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "categoryId": "category_cli",
+                    "img": "",
+                    "faIcon": "pi pi-desktop",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/DurgaCSE11/C-CODE-on-SCIENTIFIC-CALCULATOR.git", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Scientific Calculator",
+                            "text": "Advanced mathematical processing using C.",
+                            "tags": ["C"]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

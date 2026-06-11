@@ -1,0 +1,70 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Welcome!",
+                "title_short_nav": "About me",
+                "title_long_prefix": "Hello...",
+                "title_long": "I'm {{Durga Prasad!}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleInlineList",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "display_as_list_if_width_is_lower_than": 380
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "label": "Odisha – India",
+                    "link": {"href": "", "tooltipString": ""},
+                    "faIcon": "pi pi-map-marker"
+                },
+                {
+                    "id": 2,
+                    "label": "durgaprasadmahapatra21@gmail.com",
+                    "link": {"href": "mailto:durgaprasadmahapatra21@gmail.com", "tooltipString": "email_me"},
+                    "faIcon": "fa-regular fa-envelope"
+                },
+                {
+                    "id": 3,
+                    "label": "@DurgaCSE11",
+                    "link": {"href": "https://github.com/DurgaCSE11", "tooltipString": "see_on_github"},
+                    "faIcon": "fa-brands fa-github"
+                }
+            ]
+        },
+
+        {
+            "id": 2,
+            "component": "ArticleText",
+            "locales": {
+                "en": {"title": "{{A little bit}} about me..."}
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "profile.jpeg",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "text": "<p>Currently pursuing my B.Tech in CSE at {{VSSUT, Burla}}.</p><p>I am actively building strong foundations in programming and web development. Focused on creative problem-solving and logical thinking, with expertise ranging from C/C++ to modern Web Development (HTML, CSS, JS, React).</p><p>I look forward to collaborating [[with you!]]</p>"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
