@@ -37,6 +37,12 @@
             "faIcon": "fa-solid fa-folder-open"
         },
         {
+            "id": "achievements",
+            "categoryId": "showcase",
+            "jsonPath": "/data/sections/achievements.json",
+            "faIcon": "fa-solid fa-medal"
+        },
+        {
             "id": "contact",
             "categoryId": "more",
             "jsonPath": "/data/sections/contact.json",
