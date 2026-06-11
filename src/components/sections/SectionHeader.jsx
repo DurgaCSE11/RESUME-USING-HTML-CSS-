@@ -15,7 +15,7 @@ function SectionHeader({ section }) {
         ``
 
     return (
-        <header className={`section-header`}>
+        <header className={`section-header notranslate`} translate="no">
             {parsedTitle.prefix && (
                 <div className={`section-header-prefix lead-2 mb-2`}>
                     <i className={`fa-solid fa-cubes`}/>
