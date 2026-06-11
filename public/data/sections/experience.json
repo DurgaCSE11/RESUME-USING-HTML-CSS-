@@ -26,7 +26,7 @@
                     "faIcon": "pi pi-users",
                     "faIconColors": {"bg": "", "fill": ""},
                     "dateStart": {"year": 2026, "month": 5},
-                    "dateEnd": null,
+                    "dateEnd": {"now": true},
                     "locales": {
                         "en": {
                             "title": "Secretary - SENSORS COUNCIL",
@@ -45,7 +45,7 @@
                     "faIcon": "pi pi-sitemap",
                     "faIconColors": {"bg": "", "fill": ""},
                     "dateStart": {"year": 2026, "month": 2},
-                    "dateEnd": null,
+                    "dateEnd": {"now": true},
                     "locales": {
                         "en": {
                             "title": "Member of Computer Science Society",
@@ -64,7 +64,7 @@
                     "faIcon": "pi pi-id-card",
                     "faIconColors": {"bg": "", "fill": ""},
                     "dateStart": {"year": 2026, "month": 2},
-                    "dateEnd": null,
+                    "dateEnd": {"now": true},
                     "locales": {
                         "en": {
                             "title": "Member of Management",
