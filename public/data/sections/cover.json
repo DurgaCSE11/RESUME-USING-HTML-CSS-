@@ -61,7 +61,7 @@
             "items": [
                 {
                     "id": 1,
-                    "img": "images/pictures/profile-picture.jpg",
+                    "img": "images/pictures/custom-hacker-logo.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
