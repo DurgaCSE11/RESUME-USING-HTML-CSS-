@@ -54,6 +54,17 @@
                     "locales": {
                         "en": {"title": "GitHub"}
                     }
+                },
+                {
+                    "id": 4,
+                    "faIcon": "fa-brands fa-instagram",
+                    "faIconColors": { "bg": "", "fill": "" },
+                    "label": "@durga.prasad_1111",
+                    "link": {"href": "https://www.instagram.com/durga.prasad_1111?igsh=MWZsbWgwNHM0bmRoag==", "tooltipString": "open_website"},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {"title": "Instagram"}
+                    }
                 }
             ]
         }
