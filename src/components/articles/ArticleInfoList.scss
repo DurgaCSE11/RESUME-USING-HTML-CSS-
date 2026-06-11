@@ -41,25 +41,33 @@ div.article-info-list-items {
 
 div.article-info-list-item {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     background-color: var(--theme-boards-background);
     border-radius: $standard-border-radius;
     padding: var(--padding);
-    min-height: var(--min-height);
+    aspect-ratio: 1 / 1;
 
     &-avatar {
-        min-width: calc(var(--avatar-size) * 1.2);
-        font-size: calc(var(--avatar-size) / 2)!important;
-        background-color: var(--theme-dark)!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(var(--avatar-size) * 1.2);
+        height: calc(var(--avatar-size) * 1.2);
+        font-size: calc(var(--avatar-size) / 1.5)!important;
+        background-color: transparent!important;
         color: var(--theme-texts)!important;
-        border-radius: $standard-border-radius 0 0 $standard-border-radius;
+        margin-bottom: 15px;
     }
 
     &-content {
         display: flex;
         flex-direction: column;
-        align-items: start;
-        padding: var(--content-padding);
+        align-items: center;
+        text-align: center;
+        padding: 5px;
     }
 
     div.article-info-list-item-info-title {

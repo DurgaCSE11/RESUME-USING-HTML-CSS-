@@ -16,6 +16,23 @@ function NavToolList({ expanded }) {
     const feedbacks = useFeedbacks()
     const data = useData()
 
+    useEffect(() => {
+        const scriptId = 'google-translate-script';
+        if (!document.getElementById(scriptId)) {
+            window.googleTranslateElementInit = () => {
+                new window.google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            };
+            const script = document.createElement('script');
+            script.id = scriptId;
+            script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+            script.async = true;
+            document.body.appendChild(script);
+        }
+    }, []);
+
     const profile = data.getProfile()
     const maxWidgets = expanded ? 4 : 2
 
@@ -24,7 +41,7 @@ function NavToolList({ expanded }) {
         `nav-tools-shrink`
 
     const widgets = [
-        ...(language.supportsMultipleLanguages ? ["language"] : []),
+        "google_translate",
         ...(theme.supportsMultipleThemes ? [NavToolSettings.Options.THEME] : []),
         ...(feedbacks.animatedCursorEnabled ? [NavToolSettings.Options.CURSOR] : []),
         ...(profile.resumePdfUrl ? [NavToolSettings.Options.DOWNLOAD_RESUME] : []),
@@ -41,9 +58,9 @@ function NavToolList({ expanded }) {
     return (
         <div className={`nav-tools ${shrinkClass}`}>
             {visibleWidgets.map((item, key) => (
-                <div className={`nav-tools-item`}
-                     key={key}>
-                    {item === "language" && (<NavToolLanguagePicker/>)}
+                <div className={`nav-tools-item ${item === 'google_translate' ? 'nav-tools-item-translate' : ''}`}
+                     key={key} style={item === 'google_translate' ? { display: 'flex', alignItems: 'center', justifyContent: 'center', width: 'auto', padding: '0 10px', overflow: 'hidden' } : {}}>
+                    {item === "google_translate" && (<div id="google_translate_element"></div>)}
                     {item === NavToolSettings.Options.THEME && (<NavToolThemePicker/>)}
                     {item === NavToolSettings.Options.CURSOR && (<NavToolCursorToggle/>)}
                     {item === NavToolSettings.Options.DOWNLOAD_RESUME && (<NavToolResumeDownloader/>)}
