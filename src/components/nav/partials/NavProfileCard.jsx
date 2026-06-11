@@ -78,15 +78,9 @@ function NavProfileCard({ profile, expanded }) {
                     )}
                 </h1>
 
-                {roles?.length > 1 && (
-                    <TextTyper strings={roles}
-                               id={`role-typer`}
-                               className={`nav-profile-card-role`}/>
-                )}
-
-                {roles?.length === 1 && (
+                {roles?.length > 0 && (
                     <div className={`nav-profile-card-role`}
-                         dangerouslySetInnerHTML={{__html: roles[0]}}/>
+                         dangerouslySetInnerHTML={{__html: roles.join(' | ')}}/>
                 )}
             </div>
         </Card>

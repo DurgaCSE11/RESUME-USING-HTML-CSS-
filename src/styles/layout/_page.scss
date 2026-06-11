@@ -10,7 +10,8 @@ body {
     background-color: $loader-background;
 
     @include media-breakpoint-up($max-breakpoint-for-tabbed-interface) {
-        position: fixed!important;
+        position: relative!important;
+        height: 100vh;
         overflow-y: hidden!important;
     }
 }
