@@ -43,6 +43,8 @@ function ArticleCardsItems({ dataWrapper, selectedItemCategoryId }) {
 
     return (
         <Swipeable className={`article-cards-items`}
+                   loop={true}
+                   autoPlayDelay={3000}
                    breakpoints={constants.SWIPER_BREAKPOINTS_FOR_THREE_SLIDES}>
             {filteredItems.map((itemWrapper, key) => (
                 <ArticleCardsItem itemWrapper={itemWrapper} 
