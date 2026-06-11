@@ -48,7 +48,8 @@ div.article-info-list-item {
     background-color: var(--theme-boards-background);
     border-radius: $standard-border-radius;
     padding: var(--padding);
-    aspect-ratio: 1 / 1;
+    padding-top: 25px;
+    padding-bottom: 25px;
 
     &-avatar {
         display: flex;
@@ -59,7 +60,7 @@ div.article-info-list-item {
         font-size: calc(var(--avatar-size) / 1.5)!important;
         background-color: transparent!important;
         color: var(--theme-texts)!important;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     &-content {
