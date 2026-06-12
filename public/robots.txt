@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://durgaprasadmahapatra.co.in/sitemap.xml
